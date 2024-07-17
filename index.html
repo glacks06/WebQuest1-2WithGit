@@ -8,65 +8,78 @@
         a:visited{color: black; text-decoration: none;}
         a:hover{color: red; text-decoration: underline;}
         #header{
-            width: 100%;
+            width: 100%; height: 87px;
             text-align: center;
-            margin: 0 auto; padding: 0;
-            height: 120px;
+            margin: 0 auto;
+            padding-top: 33px;
+            
         }
         #logo{
             display: inline-block;
-            margin-top: 27px;
+            margin-right: 80px;
         }
         #inlineb{
             display: inline-block;
             font-size: 15px;
-            padding-left: 30px;
-            padding-right: 30px;
+            margin-right: 80px;
         }
         #headList{
             text-align: center;
+            display: block;
             width: 1200px;
             margin: 0 auto;
-            height: 120px;
-            padding-left: 0;
+            height: 53px;
         }
         #main{
             height: 464px;
             width: 100%;
         }
         .icon_title_text{
+            display: block;
+            padding-top: 30px;
+            padding-bottom: 30px;
             text-align: center;
-            font-size: 13px;
+            font-size: 10px;
         }
         .icon_box{
-            margin: 0 auto;
-            text-align: center;
             width: 1240px;
             height: 150px;
+            margin: 0 auto;
+            padding-top: 10px; padding-bottom: 10px;
+            text-align: center;
         }
         #icon_text{
             display: inline-block;
-            text-align: center;
-            margin-left: 27px;
-            margin-right: 27px;
             width: 250px;
-        }
-        #icon_hr{
-            display: inline-block;
-            width: 250px;
+            margin-right: 30px;
+            padding-bottom: 30px;
+            font-size: 14px;
             text-align: center;
-            margin-left: 25px;
-            margin-right: 25px;
+            border-bottom: 1px dotted black;
         }
         .chefs{
             height: 304px;
             text-align: center;
             background-color: rgb(216, 216, 216);
         }
-        #chefsArea{
-            width: 814px;
-            height: 304px;
+        #chefsItems{
+            display: block;
+            width: 771px; height: 304px;
             margin: 0 auto;
+            /* text-align: center; */
+        }
+        .chefTexts{
+            width: 500px; height: 224px;
+            margin-right: 30px;
+            padding-top: 80px;
+            float: left;
+            text-align: left;
+            font-size: 15px;
+        }
+        .chefImg{
+            width: 241px; height: 304px;
+            float: left;
+            background-image: url('img/chef.png');
         }
 
 
@@ -76,15 +89,16 @@
             <ul id="headList">
                 <li id="inlineb"><a>How it works</a></li>
                 <li id="inlineb"><a>Gifts</a></li>
-                <li id="inlineb"><a href="About.html" target="_blank">About</a></li>
-                <li id="logo"><img src="logo.png"></li>
+                <li id="inlineb"><a href="src/About.html" target="_blank">About</a></li>
+                <li id="logo"><img src="img/logo.png"></li>
                 <li id="inlineb"><a>Login</a></li>
                 <li id="inlineb"><a>Members</a></li>
                 <li id="inlineb"><a>Contacts</a></li>
             </ul>
         </div>
+
         <div>
-            <img src="main.png" id="main">
+            <img src="img/main.png" id="main">
         </div>
 
         <p class="icon_title_text">
@@ -94,55 +108,46 @@
 
         <div class="icon_box">
             <p id="icon_text">
-                <img src="icon1.png"><br>
+                <img src="img/icon1.png"><br>
                 fwmwmfkwmekfmkwemsdfjklamkl<br>
                 asdfjaksjdfklasjfkljaskldfjklsjf<br>
                 asdfklnskldfnaklsndfaklndfklnklsdf
             </p>
             <p id="icon_text">
-                <img src="icon2.png"><br>
+                <img src="img/icon2.png"><br>
                 fwmwmfkwmekfmkwemsdfjklamkl<br>
                 asdfjaksjdfklasjfkljaskldfjklsjf<br>
                 asdfklnskldfnaklsndfaklndfklnklsdf
             </p>
             <p id="icon_text">
-                <img src="icon3.png"><br>
+                <img src="img/icon3.png"><br>
                 fwmwmfkwmekfmkwemsdfjklamkl<br>
                 asdfjaksjdfklasjfkljaskldfjklsjf<br>
                 asdfklnskldfnaklsndfaklndfklnklsdf
             </p>
             <p id="icon_text">
-                <img src="icon4.png"><br>
+                <img src="img/icon4.png"><br>
                 fwmwmfkwmekfmkwemsdfjklamkl<br>
                 asdfjaksjdfklasjfkljaskldfjklsjf<br>
                 asdfklnskldfnaklsndfaklndfklnklsdf
             </p>
-            <div style="text-align: center; width: 1240px;">
-                <hr id="icon_hr">
-                <hr id="icon_hr">
-                <hr id="icon_hr">
-                <hr id="icon_hr">
-            </div>
         </div>
 
         <div class="chefs">
-            <div id="chefsArea">
 
-                <ul id="test">
-                    <li style="display: inline-block; float: left; margin-top: 100px;">
-                        <p style="width: 500px; height: 100px; text-align: left;">
-                            osdpfjasdfjdksj<br>
-                            klsdjfklasfdjkdfsfdsfsdasddsdsdfasdfasdfasdfsdfasdfdsdfsdfsdfdf<br>
-                            askldjfklsjdfklfajslkdfjsadfsdfsdfsdfsdsdwfwefefwefwefefwefwefwef<br>
-                            asdjfklajsdfkljsfkljldksjflkajdfslksdlkjflkjdflsdjkflsjlkajfl
-                        </p>
-                    </li>
-                    <li style="display: inline-block;">
-                        <img src="chef.png">
-                    </li>
-                </ul>
-
+            <div id="chefsItems">
+                <div class="chefTexts">
+                    <p>
+                        <b style="font-size: 23px; text-decoration: underline;">Title</b>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="chefImg">
+                </div>
             </div>
+
         </div>
 
     </body>
