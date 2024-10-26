@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
 
     </head>
@@ -14,26 +14,29 @@
             padding-top: 33px;
             
         }
-        #logo{
-            display: inline-block;
-            margin-right: 80px;
-        }
-        #inlineb{
-            display: inline-block;
-            font-size: 15px;
-            margin-right: 80px;
-        }
-        #headList{
+        
+        .headList{
             text-align: center;
             display: block;
             width: 1200px;
             margin: 0 auto;
             height: 53px;
         }
-        #main{
+        .headList li{
+            display: inline-block;
+            font-size: 15px;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+
+        #main_picture{
             height: 464px;
             width: 100%;
+            background-image: url('img/main.png');
+            background-size : 100% 100%;
         }
+
         .icon_title_text{
             display: block;
             padding-top: 30px;
@@ -41,14 +44,14 @@
             text-align: center;
             font-size: 10px;
         }
-        .icon_box{
+        #icon_box{
             width: 1240px;
             height: 150px;
             margin: 0 auto;
             padding-top: 10px; padding-bottom: 10px;
             text-align: center;
         }
-        #icon_text{
+        #icon_box p{
             display: inline-block;
             width: 250px;
             margin-right: 30px;
@@ -57,12 +60,13 @@
             text-align: center;
             border-bottom: 1px dotted black;
         }
-        .chefs{
+
+        #chefs{
             height: 304px;
             text-align: center;
             background-color: rgb(216, 216, 216);
         }
-        #chefsItems{
+        .chefsItems{
             display: block;
             width: 771px; height: 304px;
             margin: 0 auto;
@@ -86,46 +90,44 @@
     </style>
     <body>
         <div id="header">    
-            <ul id="headList">
-                <li id="inlineb"><a>How it works</a></li>
-                <li id="inlineb"><a>Gifts</a></li>
-                <li id="inlineb"><a href="src/About.html" target="_blank">About</a></li>
-                <li id="logo"><img src="img/logo.png"></li>
-                <li id="inlineb"><a>Login</a></li>
-                <li id="inlineb"><a>Members</a></li>
-                <li id="inlineb"><a>Contacts</a></li>
+            <ul class="headList">
+                <li><a>How it works</a></li>
+                <li><a>Gifts</a></li>
+                <li><a href="src/About.html" target="_blank">About</a></li>
+                <li><img src="img/logo.png"></li>
+                <li><a>Login</a></li>
+                <li><a>Members</a></li>
+                <li><a>Contacts</a></li>
             </ul>
         </div>
 
-        <div>
-            <img src="img/main.png" id="main">
-        </div>
+        <div id="main_picture"></div>
 
         <p class="icon_title_text">
             "WHAT'S FOR DINNER"<br>
             <b style="font-size: 20px;">FINALLY HAS AN <br> EASY ANSWER</b>
         </p>
 
-        <div class="icon_box">
-            <p id="icon_text">
+        <div id="icon_box">
+            <p>
                 <img src="img/icon1.png"><br>
                 fwmwmfkwmekfmkwemsdfjklamkl<br>
                 asdfjaksjdfklasjfkljaskldfjklsjf<br>
                 asdfklnskldfnaklsndfaklndfklnklsdf
             </p>
-            <p id="icon_text">
+            <p>
                 <img src="img/icon2.png"><br>
                 fwmwmfkwmekfmkwemsdfjklamkl<br>
                 asdfjaksjdfklasjfkljaskldfjklsjf<br>
                 asdfklnskldfnaklsndfaklndfklnklsdf
             </p>
-            <p id="icon_text">
+            <p>
                 <img src="img/icon3.png"><br>
                 fwmwmfkwmekfmkwemsdfjklamkl<br>
                 asdfjaksjdfklasjfkljaskldfjklsjf<br>
                 asdfklnskldfnaklsndfaklndfklnklsdf
             </p>
-            <p id="icon_text">
+            <p>
                 <img src="img/icon4.png"><br>
                 fwmwmfkwmekfmkwemsdfjklamkl<br>
                 asdfjaksjdfklasjfkljaskldfjklsjf<br>
@@ -133,9 +135,9 @@
             </p>
         </div>
 
-        <div class="chefs">
+        <div id="chefs">
 
-            <div id="chefsItems">
+            <div class="chefsItems">
                 <div class="chefTexts">
                     <p>
                         <b style="font-size: 23px; text-decoration: underline;">Title</b>
@@ -144,8 +146,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
-                <div class="chefImg">
-                </div>
+                <div class="chefImg"></div>
             </div>
 
         </div>

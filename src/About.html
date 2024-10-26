@@ -4,13 +4,15 @@
 
     </head>
     <style>
+        #base{
+            width: 1000px;
+            height: 1040px;
+            margin: 0px auto;
+            margin-top: 30px;
+        }
         #top{
             width: 1000px;
             height: 500px;
-            margin: 0 auto;
-            position: relative;
-            margin-top: 30px;
-            background-color: aqua;
         }
         .top_left{
             float: left;
@@ -19,86 +21,66 @@
             background-image: url(".././img/chef_about.png");
         }
         .top_right{
-            display: inline-block;
-            width: 250px;
-            height: 500px;
-        }
-        #top_box_Area{
-            display: inline-block;
+            float: left;
             width: 250px;
             height: 250px;
+        }
+
+        /* 초록 상자 */
+        .top_GreenBox{
+            display: inline-block;
+            width: 210px;
+            height: 210px;
             margin-top: 250px;
+            padding: 20px;
             background-color: rgba(76, 221, 76, 0.699);
         }
-        #top_box{
-            width: 210px; height: 210px;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        #down{
-            width: 1000px;
-            height: 540px;
-            margin: 0 auto;
-        }
+
+
         #box_all{
             width: 1000px;
             height: 500px;
-            margin: 0 auto;
-            background-color: aqua;
         }
-        .box_right_Area{
-            text-align: center;
-            float: right;
-            width: 250px;
-            height: 500px;
-            background-color: yellow;
-        }
-        .box_right{
-            display: inline-block;
-            width: 210px; height: 460px;
-            margin-top: 20px;
-        }
+
         .box_left{
-            display: inline-block;
-            font-size: 0;
+            float: left;
             width: 750px;
             height: 500px;
         }
-        .box_Area:nth-child(2n-1){
-            display: block;
+
+        .box_left div{
             float: left;
-            width: 250px;
-            height: 250px;
+            width: 210px;
+            height: 210px;
+            padding: 20px;
             background-color: darkgray;
         }
-        .box_Area:nth-child(2n){
-            display: block;
-            float: left;
-            width: 250px;
-            height: 250px;
-            background-color: orange;
+
+
+        /* 7번 박스 */
+        .box_right{
+            float: right;
+            width: 210px;
+            height: 460px;
+            padding: 20px;
+            background-color: yellow;
         }
-        .box{
-            display: inline-block;
-            width: 210px; height: 210px;
-            font-size: medium;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
+
+
+
         #footer{
-            width: 750px;
-            height: 40px;
-        }
-        .f_left{
-            width: 750px;
-            height: 40px;
+            width: 740px;
+            height: 35px;
+            margin: 0px;
+            padding-left: 10px;
+            padding-top: 5px;
             background-color: grey;
         }
-        #list_inline{
+        #footer li{
             display: inline-block;
-            margin-top: 10px;
+            margin-right: 5px;
+            margin-left: 5px;
             font-size: 13px;
-            padding-right: 10px;
         }
         .listBar{
             color: orange;
@@ -107,12 +89,13 @@
 
     </style>
     <body>
-        <div id="top">
-            <div class="top_left">
-                <!-- <img src=".././img/chef_about.png" id="test"> -->
-                <div id="top_box_Area">
-                    <div id="top_box">
-                        <p style="font-size: 20px;"><b>
+        <div id="base">
+
+            <div id="top">
+                <div class="top_left">
+                    <!-- 내부 초록 박스 -->
+                    <div class="top_GreenBox">
+                        <p style="font-size: 20px; margin: 0px"><b>
                             GLOBAL<br>
                             BUSINESS
                         </b></p>
@@ -120,55 +103,49 @@
                             alkdjflkdjflkajd slakdjkas alfdkljfsjf<br>
                             laskdjflkasdfjlkasjdf slkajfalkjsdf lksadj<br>
                         </P>
-                    </div>
-                </div>
-            </div>
-
-            <div class="top_right">
-                <img src=".././img/right1.png" style="display: block;">
-                <img src=".././img/right2.png" style="display: block;">
-            </div>
-        </div>
-        
-        <div id='down'>
-            <div id="box_all">
-                <div class="box_left">
-                    <div class="box_Area">
-                        <div class="box">
-                            <b style="font-size: 35px;">Title</b>
-                            akjdfklajsdklfjaklsdfjkljsdfkljs<br>
-                            asdjfkasjdfkljdklfjldksfjkl
-                        </div>
-                    </div>
-                    <div class="box_Area"><div class="box"></div></div>
-                    <div class="box_Area"><div class="box"></div></div>
-                    <div class="box_Area"><div class="box"></div></div>
-                    <div class="box_Area"><div class="box"></div></div>
-                    <div class="box_Area"><div class="box"></div></div>
-                </div>
-                <div class="box_right_Area">
-                    <div class="box_right">
                         
                     </div>
                 </div>
-            </div>
-            <div id="footer">
-                <div class="f_left">
-                    <ul style="display: inline-block; margin: 0;">
-                        <li id="list_inline">법적고지</li>
-                        <li id="list_inline" class="listBar">|</li>
-                        <li id="list_inline">이메일무단수집거부</li>
-                        <li id="list_inline" class="listBar">|</li>
-                        <li id="list_inline">이용약관</li>
-                        <li id="list_inline" class="listBar">|</li>
-                        <li id="list_inline">개인정보취급방침</li>
-                        <li id="list_inline" class="listBar">|</li>
-                        <li id="list_inline">고객센터</li>
-                        <li id="list_inline" class="listBar">|</li>
-                        <li id="list_inline">입찰공고</li>
-                    </ul>
+    
+                <div class="top_right">
+                    <img src=".././img/right1.png">
+                </div>
+                <div class="top_right">
+                    <img src=".././img/right2.png">
                 </div>
             </div>
+            
+            
+            <div id="box_all">
+                <div class="box_left">
+                    <div class="box_Area">
+                        <b style="font-size: 35px;">Title</b>
+                        akjdfklajsdklfjaklsdfjkljsdfkljs<br>
+                        asdjfkasjdfkljdklfjldksfjkl
+                    </div>
+                    <div class="box_Area" style="background-color: orange;">2</div>
+                    <div class="box_Area">3</div>
+                    <div class="box_Area" style="background-color: orange;">4</div>
+                    <div class="box_Area">5</div>
+                    <div class="box_Area" style="background-color: orange;">6</div>
+    
+                </div>
+                <div class="box_right">7</div>
+            </div>
+
+            <ul id="footer">
+                <li>법적고지</li>
+                <li class="listBar">|</li>
+                <li>이메일무단수집거부</li>
+                <li class="listBar">|</li>
+                <li>이용약관</li>
+                <li class="listBar">|</li>
+                <li>개인정보취급방침</li>
+                <li class="listBar">|</li>
+                <li>고객센터</li>
+                <li class="listBar">|</li>
+                <li>입찰공고</li>
+            </ul>
         </div>
 
     </body>
